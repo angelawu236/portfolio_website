@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/card.dart';
 
-class Projects extends StatelessWidget {
-  const Projects({super.key});
+
+class Experience extends StatelessWidget {
+  const Experience({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class Projects extends StatelessWidget {
         data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
         child: ExpansionTile(
           title: const Text(
-            'Projects',
+            'Experience',
             style: TextStyle(color: Colors.white, fontSize: 20),
           ),
           trailing: const Icon(Icons.expand_more, color: Colors.white, size: 20),
@@ -21,7 +22,7 @@ class Projects extends StatelessWidget {
             Padding(
               padding: EdgeInsets.all(8.0),
               child: Text(
-                'Project stuff. ',
+                'Experience stuff. ',
                 style: TextStyle(color: Colors.white70),
               ),
             ),

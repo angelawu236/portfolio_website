@@ -1,10 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
-import 'package:portfolio_website/card.dart';
 
-class Contact extends StatelessWidget {
-  const Contact({super.key});
+import '../../card.dart';
+
+class Spis extends StatelessWidget {
+  const Spis({super.key});
 
   @override
   Widget build(BuildContext context) {

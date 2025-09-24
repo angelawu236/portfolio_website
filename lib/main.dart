@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:portfolio_website/sections/experience.dart';
 import 'package:portfolio_website/sections/landing.dart';
 import 'package:animated_background/animated_background.dart';
+import 'package:portfolio_website/sections/projects.dart';
 import 'package:portfolio_website/sections/side_bar.dart';
 
 void main() {
@@ -36,9 +38,17 @@ class MyApp extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
 
                 children: [
+
                   Expanded(
                     flex: 7,
-                    child: Landing(),
+
+                    child: Column(
+                      children: [
+                        Landing(),
+                        Projects(),
+                        Experience(),
+                      ],
+                    ),
                   ),
                   // Right sidebar
                   Expanded(
@@ -47,6 +57,7 @@ class MyApp extends StatelessWidget {
                   ),
                 ],
               ),
+
             ],
           )
 
