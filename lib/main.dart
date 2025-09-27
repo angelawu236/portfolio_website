@@ -40,14 +40,16 @@ class MyApp extends StatelessWidget {
                 children: [
 
                   Expanded(
-                    flex: 7,
+                    flex: 9,
 
-                    child: Column(
-                      children: [
-                        Landing(),
-                        Projects(),
-                        Experience(),
-                      ],
+                    child: SingleChildScrollView(
+                      child: Column(
+                        children: [
+                          Landing(),
+                          Projects(),
+                          Experience(),
+                        ],
+                      ),
                     ),
                   ),
                   // Right sidebar

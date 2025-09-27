@@ -22,7 +22,7 @@ class SpaceInvader extends StatelessWidget {
                   Text("When: ", style: TextStyle(color: Colors.white70)),
                   Text("Nov 2021",
                       style: TextStyle(color: Colors.orangeAccent)),
-                  Text(", AP CSP @ Lynbrook HS ",
+                  Text(", AP CSP Lynbrook HS ",
                       style: TextStyle(color: Colors.white70))
                 ],
               ),

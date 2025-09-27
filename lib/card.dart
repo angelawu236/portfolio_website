@@ -1,7 +1,6 @@
+
 import 'package:flutter/cupertino.dart';
-
 import 'package:flutter/material.dart';
-
 
 class AppCard extends StatelessWidget {
   const AppCard({super.key, required this.child});
@@ -9,8 +8,6 @@ class AppCard extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final cap = MediaQuery.of(context).size.height * 0.6;
-
     return Container(
       width: double.infinity,
       margin: const EdgeInsets.all(12),
@@ -20,13 +17,9 @@ class AppCard extends StatelessWidget {
           decoration: BoxDecoration(
             color: Colors.black.withOpacity(0.5),
           ),
-          child: ConstrainedBox(
-            constraints: BoxConstraints(maxHeight: cap),
-            child: SingleChildScrollView(
-              primary: false,
-              padding: const EdgeInsets.all(15),
-              child: child,
-            ),
+          child: Padding(
+            padding: const EdgeInsets.all(15),
+            child: child,
           ),
         ),
       ),

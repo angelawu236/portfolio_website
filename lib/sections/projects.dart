@@ -2,6 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:portfolio_website/card.dart';
+import 'package:portfolio_website/sections/projects/flower.dart';
+import 'package:portfolio_website/sections/projects/lakewood.dart';
+import 'package:portfolio_website/sections/projects/mediarie.dart';
 
 class Projects extends StatelessWidget {
   const Projects({super.key});
@@ -11,19 +14,30 @@ class Projects extends StatelessWidget {
     return AppCard(
       child: Theme(
         data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
-        child: ExpansionTile(
-          title: const Text(
-            'Projects',
-            style: TextStyle(color: Colors.white, fontSize: 20),
+        child: const ExpansionTile(
+          tilePadding: EdgeInsets.zero,
+          title: Align(
+            alignment: Alignment.centerLeft,
+            child: Text(
+              'Projects',
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ),
           ),
-          trailing: const Icon(Icons.expand_more, color: Colors.white, size: 20),
-          children: const [
+          trailing: Icon(Icons.expand_more, color: Colors.white, size: 20),
+          children: [
+              Padding(
+                padding: EdgeInsets.all(8.0),
+                child: const Flower(),
+              ),
+            SizedBox(height: 20),
             Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text(
-                'Project stuff. ',
-                style: TextStyle(color: Colors.white70),
-              ),
+              child: const Lakewood(),
+            ),
+            SizedBox(height: 20),
+            Padding(
+              padding: EdgeInsets.all(8.0),
+              child: const Mediarie(),
             ),
           ],
         ),

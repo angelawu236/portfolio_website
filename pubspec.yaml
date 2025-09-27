@@ -18,6 +18,7 @@ dependencies:
   cupertino_icons: ^1.0.8
   google_fonts: ^6.2.1
   animated_background: ^2.0.0
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:
@@ -29,6 +30,7 @@ dev_dependencies:
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
   flutter_lints: ^4.0.0
+  video_player: ^2.9.2
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -44,6 +46,8 @@ flutter:
     - assets/bg.png
     - assets/profile2.jpg
     - assets/alien_invaders.png
+    - assets/flower_project.mp4
+    - assets/flower_project2.mp4
 
 
 

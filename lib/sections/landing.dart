@@ -21,11 +21,11 @@ class Landing extends StatelessWidget {
                 decoration: BoxDecoration(
                   border: Border.all(
                     color: Colors.blueAccent
-                        .withOpacity(0.5), // change border color here
-                    width: 10, // change thickness here
+                        .withOpacity(0.5),
+                    width: 10,
                   ),
                   borderRadius:
-                      BorderRadius.circular(6), // optional rounded corners
+                      BorderRadius.circular(6),
                 ),
                 child: ClipRRect(
                   child: Image.asset(

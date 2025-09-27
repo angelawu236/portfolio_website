@@ -13,22 +13,24 @@ class Experience extends StatelessWidget {
       child: Theme(
         data: Theme.of(context).copyWith(dividerColor: Colors.transparent),
         child: ExpansionTile(
-          title: const Text(
-            'Experience',
-            style: TextStyle(color: Colors.white, fontSize: 20),
+          tilePadding: EdgeInsets.zero, // remove ListTile padding
+          title: const Align(
+            alignment: Alignment.centerLeft, // lock to left
+            child: Text(
+              'Work Experience',
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ),
           ),
           trailing: const Icon(Icons.expand_more, color: Colors.white, size: 20),
           children: const [
             Padding(
               padding: EdgeInsets.all(8.0),
-              child: Text(
-                'Experience stuff. ',
-                style: TextStyle(color: Colors.white70),
-              ),
+              child: Text('Experience stuff.', style: TextStyle(color: Colors.white70)),
             ),
           ],
         ),
       ),
     );
+
   }
 }
