@@ -37,7 +37,10 @@ class Flower extends StatelessWidget {
 
         const SizedBox(
           height: 300,
-          child: ProjectWidget(),
+          child: ProjectWidget(
+            video1: 'assets/flower_project.mp4',
+            video2: 'assets/flower_project2_small.mp4',
+          ),
         ),
         const SizedBox(height: 10),
         const Text(

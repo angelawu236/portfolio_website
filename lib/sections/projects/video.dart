@@ -2,7 +2,15 @@ import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
 class ProjectWidget extends StatefulWidget {
-  const ProjectWidget({super.key});
+  final String video1;
+  final String video2;
+
+
+  const ProjectWidget({
+    super.key,
+    required this.video1,
+    required this.video2,
+  });
 
   @override
   State<ProjectWidget> createState() => _ProjectWidgetState();
@@ -15,13 +23,13 @@ class _ProjectWidgetState extends State<ProjectWidget> {
   @override
   void initState() {
     super.initState();
-    _c1 = VideoPlayerController.asset('assets/flower_project.mp4')
+    _c1 = VideoPlayerController.asset(widget.video1)
       ..setLooping(true)
       ..initialize().then((_) {
         setState(() {});
         _c1.play();
       });
-    _c2 = VideoPlayerController.asset('assets/flower_project2.mp4')
+    _c2 = VideoPlayerController.asset(widget.video2)
       ..setLooping(true)
       ..initialize().then((_) {
         setState(() {});

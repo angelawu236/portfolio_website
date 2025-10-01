@@ -6,6 +6,8 @@ import 'package:portfolio_website/card.dart';
 import 'package:portfolio_website/sections/projects/video.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+import 'mediarie_video.dart';
+
 class Mediarie extends StatelessWidget {
   const Mediarie({super.key});
 
@@ -34,6 +36,10 @@ class Mediarie extends StatelessWidget {
           style: TextStyle(color: Colors.lightBlueAccent, fontSize: 14),
         ),
         const SizedBox(height: 10),
+        MediarieVid(
+          videoAsset: 'assets/mediarie.mp4',
+          imageAssets: ['assets/profile2.jpg'],
+        ),
       ]
       ),
     );
