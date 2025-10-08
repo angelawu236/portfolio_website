@@ -51,6 +51,12 @@ flutter:
     - assets/lakewood.mp4
     - assets/lakewood_2.mp4
     - assets/mediarie.mp4
+    - assets/add_category.png
+    - assets/details.png
+    - assets/home.png
+    - assets/login.png
+    - assets/movie_list.png
+    - assets/search.png
 
 
 
